@@ -2145,7 +2145,7 @@ header.fixed {
 /*----------------------------------------*/
 #home {
   position: relative;
-  background-image: url(/mjk/assets/images/author/home-bg.png);
+  background-image: url(/mjk/assets/images/home-bg.png);
 }
 #home .col-lg-7.col-12 {
   z-index: 2;
