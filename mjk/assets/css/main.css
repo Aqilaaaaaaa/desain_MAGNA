@@ -2170,6 +2170,7 @@ header.fixed {
   -webkit-animation: sticky 1s;
           animation: sticky 1s;
   background: #ed6d1dbe;
+  color: var(--cf-theme-white);
 }
 
 /*----------------------------------------*/
@@ -2525,8 +2526,7 @@ header.fixed {
 }
 #portfolio .portfolio-container .portfolio-items {
   width: 100%;
-  margin: auto;
-  /* background-color: blue; */
+  margin: 4px;
 }
 #portfolio .portfolio-container .filter-btn {
   text-align: center;
@@ -2593,6 +2593,12 @@ header.fixed {
   align-content: space-around;
   align-items: center;
 }
+#portfolio .item {
+  margin-left: 110px;
+}
+#portfolio .card {
+  margin-top: 80px;
+}
 #portfolio .portfolio-container .item .card{
   height: 300px;
   width: 250px;
@@ -2635,7 +2641,7 @@ header.fixed {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    color: #9f9f9f;
+    color: var(--cf-theme-white);
     transition: #f5f5f5 .3s ease;
     opacity: 0;
   }
@@ -2647,6 +2653,7 @@ header.fixed {
   }
   .subtitle{
     text-align: center;
+    color: var(--cf-theme-white);
   }
   &:hover{
     &:before{
@@ -2916,10 +2923,17 @@ input[type=number] {
 /*  18. footer CSS START
 /*----------------------------------------*/
 footer {
-  background: var(--cf-theme-secondary);
+  background: var(--cf-theme-primary);
   padding: 37px 0;
-  color: var(--cf-theme-white);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+footer .logo {
+  width: 100px;
+  height: 100px;
+  background-color: var(--cf-theme-white);
+  border-radius: 100%;
 }
 footer .copy-right-text {
   margin-top: 10px;
@@ -2927,20 +2941,21 @@ footer .copy-right-text {
 }
 footer .footer-widget .title{
   line-height: 30px;
-  color: var(--cf-theme-primary);
-  text-align: start;
+  color: var(--cf-theme-secondary);
+  /* text-align: start; */
  }
-footer .footer-widget p {
-  background-color: red;
+footer .footer-widget{
+  margin-left: 115px;
+  line-height: 40px;
 }
-footer .footer-widget.links-widget ul.link-list li + li {
+footer .footer-widget .links-widget ul .link-list li + li {
   margin-top: 4px; }
-footer .footer-widget.links-widget ul.link-list a {
+footer .footer-widget .links-widget ul .link-list a {
   display: block;
   position: relative;
   padding-left: 15px;
   transition: all .4s ease; }
-footer .footer-widget.links-widget ul.link-list a:before {
+footer .footer-widget .links-widget ul .link-list a:before {
   content: '';
   width: 5px;
   height: 5px;
@@ -2953,13 +2968,9 @@ footer .footer-widget.links-widget ul.link-list a:before {
   transform: translateY(-50%);
   transition: all .4s ease; }
 footer .footer-widget.links-widget ul.link-list a:hover {
-  color: var(--cf-theme-primary); }
+  color: var(--cf-theme-secondary); }
 footer .footer-widget.links-widget ul.link-list a:hover:before {
-  background: var(--cf-theme-primary); 
+  background: var(--cf-theme-secondary); 
 }
-footer .footer-widget.contact-widget {
-  margin-left: 20px;
-  text-align: start;
-}
-footer .footer-widget.contact-widget p + p {
-  margin-top: 25px; }
+footer .footer-widget.explore {
+  padding-left: 40px; }
