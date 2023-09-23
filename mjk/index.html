@@ -25,7 +25,7 @@
         
         <ul class="menus">
           <li class="current"><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="page/about.html">About</a></li>
           <li><a href="#portfolio">Projects</a></li>
           <li><a href="/mjk/page/services.html">Services</a></li>
           <li><a href="/mjk/page/contact.html">Contact</a></li>
@@ -56,7 +56,7 @@
               design.
             </p>
             <div class="hero-btn d-flex flex-row align-center">
-              <a href="https://wa.me/6285280082423" class="cf-btn">Connect With Me</a>
+              <a href="https://wa.me/6285280082423" class="cf-btn">Connect With Us</a>
               <p>or <a href="#portfolio" class="text-primary mr-5">Our Projects </a> </p>
             </div>
             <div class="counter d-flex flex-column align-center">
@@ -102,8 +102,96 @@
             for My Customers
           </h2>
         </div>
-        <div class="card-container">
+        <div class="arrows">
+          <a class="arrow arrow-left active">
+            <i class="fa-solid fa-chevron-left"></i>
+          </a>
+          <a class="arrow arrow-right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="card-container swiper">
           <div class="row">
+            <div class="col-md-6 col-xl-4">
+              <div class="service-card">
+                <div class="icon-container">
+                  <img src="./assets/icons/uiux.svg" class="svg" alt="" />
+                </div>
+                <h3>Software House</h3>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <a href="#services_1" class="link"></a>
+              </div>
+              <div class="mfp-fade mfp-hide" id="services_1">
+                <div class="content">
+                  <div class="img">
+                    <img src="./assets/images/services/1.jpg" alt="" />
+                  </div>
+                  <div class="des">
+                    <h4>UI/UX Designer</h4>
+                    <p class="price">Start from <span>$99</span></p>
+                    <p>
+                      We live in a world where we need to move quickly and
+                      iterate on our ideas as flexibly as possible. Building
+                      mockups strikes the ideal balance between true-life
+                      representation of the end product and ease of
+                      modification.
+                    </p>
+                    <p>
+                      Mockups are useful both for the creative phase of the
+                      project - for instance when you're trying to figure out
+                      your user flows or the proper visual hierarchy - and the
+                      production phase when they will represent the target
+                      product. Making mockups a part of your creative and
+                      development process allows you to quickly and easily
+                      ideate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="service-card">
+                <div class="icon-container">
+                  <img src="./assets/icons/uiux.svg" class="svg" alt="" />
+                </div>
+                <h3>Software House</h3>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <a href="#services_1" class="link"></a>
+              </div>
+              <div class="mfp-fade mfp-hide" id="services_1">
+                <div class="content">
+                  <div class="img">
+                    <img src="./assets/images/services/1.jpg" alt="" />
+                  </div>
+                  <div class="des">
+                    <h4>UI/UX Designer</h4>
+                    <p class="price">Start from <span>$99</span></p>
+                    <p>
+                      We live in a world where we need to move quickly and
+                      iterate on our ideas as flexibly as possible. Building
+                      mockups strikes the ideal balance between true-life
+                      representation of the end product and ease of
+                      modification.
+                    </p>
+                    <p>
+                      Mockups are useful both for the creative phase of the
+                      project - for instance when you're trying to figure out
+                      your user flows or the proper visual hierarchy - and the
+                      production phase when they will represent the target
+                      product. Making mockups a part of your creative and
+                      development process allows you to quickly and easily
+                      ideate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col-md-6 col-xl-4">
               <div class="service-card">
                 <div class="icon-container">
@@ -288,7 +376,7 @@
               publishing and graphic design, Lorem ipsum is a placeholder .
             </p>
             <div class="d-flex align-center btn-container">
-              <a href="#" class="cf-btn">Read More</a>
+              <a href="/mjk/page/about.html" class="cf-btn">Read More</a>
               <div class="d-flex watch-video align-center">
                 <a
                   href="https://www.youtube.com/watch?v=B-ytMSuwbf8"
@@ -670,14 +758,63 @@
     
     <footer>
       <div class="container">
-        <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <div class="d-flex flex-row justify-content-between ">
+          <div class="footer-widget about-widget">
+            <h3 class="title">Magna Juara Kreasi</h3>
+            <p>Growth with us bacause we support all your IT needed</p>
+          </div>
+          <div class="footer-widget links-widget explore">
+            <h3 class="title">Explore</h3>
+            <ul class="link-list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="porto.html">Projects</a></li>
+              <li><a href="sevices.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-widget contact-widget">
+            <h3 class="title">Contact</h3>
+            <p>needhelp@printify.com</p>
+            <div class="social-icons">
+              <a href="https://instagram.com/magnajuarakreasi?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram fa-lg" size></i></a>
+              <a href="https://www.linkedin.com/in/magna-juara-kreasi/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+              <a href="https://wa.me/6285280082423"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="copy-right-text">
-          MAGNA JUARA KREASI © 2023
-        </div>
+        
+        <!-- <div class="row">
+          <div class="d-flex justify-content-between">
+            <div class="footer-widget about-widget">
+              <div class="title">
+                <h3>MAGNA JUARA KREASI</h3>
+              </div>
+              <p>Support All Your IT Needed</p>
+              <div class="social-icons">
+                <a href="https://instagram.com/magnajuarakreasi?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram fa-lg" size></i></a>
+              <a href="https://www.linkedin.com/in/magna-juara-kreasi/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+              <a href="https://wa.me/6285280082423"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+              </div>
+            </div>
+            <div class="footer-widget links-widget explore">
+              <h3 class="title">Explore</h3>
+              <ul class="link-list">
+                <li><a href="about.html">About</a></li>
+                <li><a href="porto.html">Projects</a></li>
+                <li><a href="sevices.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-widget contact-widget">
+              <h3 class="title">Contact</h3>
+              <p>needhelp@printify.com</p>
+              <p>88 New Street, Washington DC <br /> United States, America</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="copy-right-text">
+        MJK © 2023
       </div>
     </footer>
     <div class="progress">
