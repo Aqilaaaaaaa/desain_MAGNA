@@ -2178,7 +2178,7 @@ header.fixed {
 /*----------------------------------------*/
 #home {
   position: relative;
-  background-image: url(/mjk/assets/images/home-bg.png);
+  background-image: url(../images/home-bg.png);
 }
 #home .col-lg-7.col-12 {
   z-index: 2;
@@ -2925,7 +2925,7 @@ input[type=number] {
 footer {
   background: var(--cf-theme-primary);
   padding: 37px 0;
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   flex-direction: column;
 }
