@@ -3,7 +3,7 @@
 * imported styles 
 ***************************/
 @import url(https://fonts.googleapis.com/css?family=Pacifico|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i);
-@import url(bootstrap.min.css);
+/* @import url(bootstrap.min.css); */
 @import url(bootstrap-select.min.css);
 @import url(owl.carousel.css);
 @import url(owl.theme.default.min.css);
@@ -57,11 +57,11 @@
   --cf-fs-h6: 14px;
 }
 
-body {
-  font-family: 'Rubik';
-  color: #757575;
-  font-size: 18px;
-  line-height: 32px; }
+  /* body {
+    font-family: 'Rubik';
+    color: #757575;
+    font-size: 18px;
+    line-height: 32px; } */
 
 a:hover,
 a:visited,
