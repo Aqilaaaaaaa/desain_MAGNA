@@ -10,7 +10,7 @@
     /* axo init */
     init() {
       axo.imgToSvg(),
-        // axo.smoothScrolling(),
+        
         axo.customMouse(),
         axo.scrollToActiveNav(),
         axo.feedBackSlider(),
