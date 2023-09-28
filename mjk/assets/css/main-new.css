@@ -3245,9 +3245,23 @@ input[type=number] {
 footer {
   background: var(--cf-theme-primary);
   padding: 37px 0;
-  /* text-align: center; */
-  display: flex;
-  flex-direction: column;
+}
+footer p {
+  color: white;
+}
+
+footer .logo-out {
+  margin-left: 8px;
+}
+footer .logo-out p {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+footer .logo-adr {
+  text-align: start;
+  margin-top: 30px;
+  margin-left: 20px;
 }
 
 footer .logo {
@@ -3269,7 +3283,6 @@ footer .title {
 footer .footer-widget .title {
   line-height: 30px;
   color: var(--cf-theme-secondary);
-  /* text-align: start; */
 }
 
 footer .footer-widget {
