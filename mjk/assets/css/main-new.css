@@ -2409,7 +2409,7 @@ header.fixed {
 
 #home span.ring2 {
   position: absolute;
-  top: 55%;
+  top: 65%;
   left: 30%;
 }
 
@@ -2667,8 +2667,14 @@ only screen and (min-width: 576px) and (max-width: 767px),
   color: var(--cf-theme-white);
 }
 
-#services .service-card .icon-container {
-  width: 72px;
+#services .icon-container {
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+}
+#services .icon-container .icon {
+  width: 80px;
+  margin-right: 8px;
 }
 
 #services .service-card .icon-container svg {
