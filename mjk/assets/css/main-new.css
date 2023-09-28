@@ -397,7 +397,7 @@ img {
 }
 
 .text-primary {
-  color: #676cdb;
+  color: #676cdb !important;
 }
 
 .bg-primary {
@@ -3261,6 +3261,7 @@ footer .copy-right-text {
   margin-top: 10px;
   font-weight: 400;
 }
+
 footer .title {
   color: var(--cf-theme-secondary);
 }
