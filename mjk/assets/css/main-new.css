@@ -2365,8 +2365,10 @@ header.fixed {
   text-align: center;
 }
 
-#home h1 {
-  padding-top: 130px;
+#home h2 {
+  padding-top: 140px;
+  padding-bottom: 50px;
+  font-size: 58px;
 }
 
 #home .short-bio {
