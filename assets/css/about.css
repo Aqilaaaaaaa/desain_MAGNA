@@ -5,6 +5,7 @@
 @import url(../plugins/icofont/css/icofont.css);
 @import url(../plugins/printify-icon/style.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   /** @font family declaration */
   --cf-ff-body: 'Rubik', sans-serif;
@@ -44,15 +45,84 @@
   --cf-fs-h5: 18px;
   --cf-fs-h6: 14px;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .hero-service .img-fluid {
+    margin-top: 20% !important;
+    margin-left: 0 !important;
+    height: auto !important;
+    width: auto !important;
+  }
+
+  .hero-service .content {
+    position: static !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .hero-service .content h2 {
+    color: var(--cf-grey-dark);
+    font-size: 1.6em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-service .content h3 {
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .vision-service h2 {
+    color: var(--cf-grey-dark);
+    font-size: 1.8em;
+  }
+
+  .item p {
+    font-size: 0.9em;
+  }
+
+  #slider .owl-nav {
+    position: absolute;
+    top: 38% !important;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #slider .owl-nav button {
+    width: 30px !important;
+    height: 30px !important;
+    background: #ed6d1d !important;
+    border-radius: 50% !important;
+    position: relative;
+    color: #fff;
+  }
+
+  #slider .owl-nav span {
+    bottom: 20% !important;
+  }
+
+}
+
 /* Hero BAnner */
 .hero-service .content {
   position: absolute;
   margin-top: 20%;
   margin-left: 150px;
 }
+
+
+
+.hero-service .content h2 {
+  color: var(--cf-grey-dark);
+}
+
 .hero-service h1 {
   font-family: var(--cf-ff-heading);
-  color: var(--cf-heading-primary);
+  color: var(--cf-grey-dark);
   margin-top: 0px;
   font-weight: var(--cf-fw-sbold);
   line-height: 1.2;
@@ -61,8 +131,8 @@
 .hero-service .img-fluid {
   margin-top: 20%;
   margin-left: 150px;
-  width: 500px;
-  height: 500px
+  width: 400px;
+  height: 400px
 }
 
 .work-steps .item {
@@ -122,10 +192,10 @@
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }

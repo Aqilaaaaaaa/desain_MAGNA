@@ -23,6 +23,11 @@
 <body>
 
 
+
+  <div id="preloader">
+    <div class="loader_line"></div>
+  </div>
+
   <header class="position-absolute w-100">
     <div class="container d-flex flex-roww">
       <div class="logo-bg" style="background: none;">
@@ -45,29 +50,28 @@
         <a class="text-dark" href="https://wa.me/6285280082423" target="_blank"><i
             class="fa-brands fa-whatsapp fa-lg"></i></a>
       </div>
-      <div class="toggle">
+      <div class="toggle toggle-static">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
   </header>
-  <div id="preloader">
-    <div class="loader_line"></div>
-  </div>
-  <div class="container-fluid" style="padding:9em 0 0px 0">
+
+  <div class="container-fluid" style="padding:8em 0 0px 0">
     <section class="page-title">
       <div class="thm-container">
         <h3>Services</h3>
       </div>
     </section>
+
     <div class="breadcumb-wrapper">
       <div class="thm-container">
         <ul class="breadcumb">
           <li><a href="../index.html">Homepage</a></li><!--
-            -->
+              -->
           <li><span class="sep">-</span></li><!--
-            -->
+              -->
           <li><span>Services</span></li>
         </ul>
       </div>
@@ -138,7 +142,7 @@
                   klien. Membuat aplikasi dalam bentuk mobile maupun berbasis website </p>
               </div><!-- /.sec-title -->
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6 col-xl-6">
                   <div class="single-what-we-do">
                     <div class="text-box hvr-bounce-to-bottom">
                       <a href="#">
@@ -150,7 +154,7 @@
                     </div><!-- /.text-box -->
                   </div><!-- /.single-what-we-do -->
                 </div><!-- /.col-md-6 -->
-                <div class="col-md-6">
+                <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6 col-xl-6">
                   <div class="single-what-we-do-two clearfix">
                     <div class="img-box">
                       <img src="../assets/images/services/sh-analisis.jpg" alt="Awesome Image" />
@@ -223,7 +227,7 @@
                           </div>/.img-box -->
                     <div class="text-box hvr-bounce-to-bottom">
                       <a href="#">
-                        <h3>We Make Every Video Content</h3>
+                        <h3 style="color:#000">We Make Every Video Content</h3>
                       </a>
                       <p>Kami membuat berbagai jenis video, mulai dari video lecturing,Animasi 2D/3D, Podcast,
                         Dokumenter, Video Series, dll sesuai dengan kebutuhan anda</p>
@@ -543,32 +547,33 @@
 
   <footer class="container-fluid text-white">
     <div class="row text-center">
-      <div class="col-6 col-md-4">
+      <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12">
         <div class="logo-out d-flex justify-content-start">
-          <img href="#home" src="/assets/images/logo.png" class="logo" />
+          <img href="#home" src="assets/images/logo.png" class="logo" />
           <p><span class="text-white mt-8">MAGNA </span>JUARA KREASI</p>
         </div>
         <div class="logo-adr">
-          <p>Infinity Office MTH Square Ground Floor A4 A Jl. Letjen M.T. Haryono Kaveling 10 Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta</p>
-          <div class="mb-1 ">
+          <p>Infinity Office MTH Square Ground Floor A4 A </br> Jl. Letjen M.T. Haryono Kaveling 10 Kota Jakarta
+            Selatan, Daerah Khusus Ibukota Jakarta</p>
+          <div class="mb-1 copyright">
             Magna Juara Kreasi © 2023
           </div>
         </div>
       </div>
-      
-      <div class="col-6 col-md-4">
+
+      <div class="col-md-4 col-xl-4 col-lg-4 col-xs-12 col-sm-12 footer-info-column">
         <div class="mb-3">
           <h4 class="title">Explore</h4>
         </div>
-        <div class="mx-3">
+        <div class="mx-3 site-links">
           <ul style="line-height: 2;">
             <li>
-              <a href="#" onclick="javascript:;">
+              <a href="../index.html" onclick="javascript:;">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" onclick="javascript:;">
+              <a href="../page/about.html" onclick="javascript:;">
                 About
               </a>
             </li>
@@ -578,23 +583,23 @@
               </a>
             </li>
             <li>
-              <a href="#" onclick="javascript:;">
+              <a href="../page/services.html" onclick="javascript:;">
                 Services
               </a>
             </li>
             <li>
-              <a href="#" onclick="javascript:;">
+              <a href="../page/contact.html" onclick="javascript:;">
                 Contacts
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="col-6 col-md-4">
+      <div class="col-lg-4 col-xl-4 col-md-4 col-xs-12 col-sm-12 footer-info-column">
         <div class="mb-4">
           <h4 class="title">Follow Our Social Media</h4>
         </div>
-        <span>info@magnakreasi.com</span>
+        <div class="email">info@magnakreasi.com</div>
         <div class="social-icons mt-3">
           <a href="https://instagram.com/magnajuarakreasi?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i
               class="fa-brands fa-instagram fa-lg" size></i></a>
@@ -632,29 +637,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-  <script>
-
-    $('#myTab a').on('click', function (e) {
-      e.preventDefault()
-      $(this).tab('show')
-    })
-
-    VANTA.NET({
-      el: "#home",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x373737,
-      backgroundColor: 0xe0e1b,
-      points: 8.00,
-      maxDistance: 19.00,
-      spacing: 19.00
-    })
-  </script>
 </body>
 
 </html>

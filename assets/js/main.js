@@ -10,7 +10,7 @@
     /* axo init */
     init() {
       axo.imgToSvg(),
-        
+
         axo.customMouse(),
         axo.scrollToActiveNav(),
         axo.feedBackSlider(),
@@ -86,7 +86,7 @@
           // On-page links
           if (
             location.pathname.replace(/^\//, "") ==
-              this.pathname.replace(/^\//, "") &&
+            this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
           ) {
             // Figure out element to scroll to
@@ -294,8 +294,10 @@
       $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
           $("header").addClass("fixed");
+          $("header").addClass("sliding");
         } else {
           $("header").removeClass("fixed");
+          $("header").removeClass("sliding");
         }
       });
     },
