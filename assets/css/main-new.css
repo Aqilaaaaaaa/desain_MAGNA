@@ -2515,6 +2515,19 @@ header.fixed {
   #home .counter h2 {
     font-size: 36px;
   }
+  #home .title h2{
+    font-size: 40px;
+  }
+  #home .extra-bg {
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    z-index: 0;
+  }
 }
 
 #home .extra-bg {
@@ -2569,14 +2582,80 @@ only screen and (min-width: 576px) and (max-width: 767px),
   #home .hero-center-bg {
     width: 120px;
   }
+  #home span.ring1 {
+    position: absolute;
+    bottom: 10%;
+    left: 20px;
+  }
+  
+  #home span.ring1 img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #838485;
+  }
+  
+  #home span.ring2 {
+    position: absolute;
+    top: 85%;
+    left: 30%;
+  }
+  
+  #home span.ring2 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #656fe0;
+  }
+  
+  #home span.ring3 {
+    position: absolute;
+    right: 15px;
+    bottom: 8%;
+  }
+  
+  #home span.ring3 img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #838485;
+  }
+  
+  #home span.ring4 {
+    position: absolute;
+    bottom:10px;
+    left: 46%;
+  }
+  
+  #home span.ring4 img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #656fe0;
+  }
+  
+  #home span.ring5 {
+    position: absolute;
+    top: 80%;
+    right: 30%;
+  }
+  
+  #home span.ring5 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #656fe0;
+  }
+  #home .hero-center img {
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+    max-width: 500px;
+  }
 }
 
-#home .hero-center img {
-  position: absolute;
-  bottom: 0;
-  right: -60px;
-  max-width: 500px;
-}
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
