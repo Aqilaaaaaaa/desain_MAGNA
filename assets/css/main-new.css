@@ -3329,6 +3329,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 #contact .info-details {
   margin-top: 36px;
 }
+#contact .info-details p {
+  
+  font-size: 20px;
+}
 
 #contact .info-details li {
   margin-bottom: 30px;
@@ -3395,7 +3399,14 @@ input::-webkit-inner-spin-button {
   -webkit-box-shadow: 0 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
   box-shadow: 0 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
 }
-
+@media (max-width: 480px) {
+  #contact .info-details p {
+    font-size: 19px;
+  }
+  #contact .section-title h3 {
+    font-size: 30px;
+  }
+}
 
 /* Firefox */
 input[type=number] {
