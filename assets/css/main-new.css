@@ -2616,7 +2616,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
-(max-width: 575px) {
+(max-width: 480px) {
   #home .hero-center-bg {
     width: 120px;
   }
@@ -2636,7 +2636,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
   #home span.ring2 {
     position: absolute;
-    top: 85%;
+    top: 75%;
     left: 30%;
   }
 
@@ -2852,23 +2852,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
   padding: 15px 20px;
 }
 
-#about .watch-video {
-  margin-left: 30px;
-}
-
-#about .watch-video a {
-  margin-right: 10px;
-  color: var(--cf-theme-dark);
-  font-size: 50px;
-  display: contents;
-}
-
-#about .watch-video p {
-  margin-bottom: 0;
-  margin-left: 10px;
-  color: var(--cf-theme-dark);
-}
-
 #about .btn-container {
   margin-top: 50px;
 }
@@ -2896,24 +2879,30 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media (max-width: 480px) {
   #about .author-image-container .image-bg {
     position: absolute;
-    width: 100%;
-    height: 230px;
+    width: 310px;
+    height: 200px;
     background-color: var(--cf-theme-primary);
-    bottom: -100px;
-    left: 0;
-    z-index: -1;
     border-radius: 20px;
     padding: 0;
-    margin: 0;
-    border-radius: 0;
-    margin-bottom: 20px;
+    left: 20px;
+    z-index: -1;
+  }
+  #about .author-image-container .image-area {
+    width: 300px;
+    height: auto;
+    margin-left: 50px;
+    
+  }
+  #about .section-title {
+    margin-bottom: 25px;
+    text-align: center;
   }
 }
 
-#about .container .about-column {
+/* #about .container .about-column {
   padding: 0 !important;
   margin: 0 !important;
-}
+} */
 
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
   #about .author-image-container .image-bg {
@@ -2926,15 +2915,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
     z-index: -1;
     border-radius: 20px;
     padding: 0;
-    margin: 0;
-    border-radius: 0;
-    margin-bottom: 20px;
   }
 
-  #about .container .about-column {
+  /* #about .container .about-column {
     padding: 0 !important;
     margin: 0 !important;
-  }
+  } */
 }
 
 
@@ -2944,7 +2930,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
     width: 300px;
     height: 200px;
     left: -47px;
-    top: 12%;
     border-radius: 10px;
   }
 }
@@ -2952,7 +2937,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 #about .author-image-container .image-area img {
   border-radius: 20px;
   position: relative;
-  max-width: 100%;
   top: 0;
 }
 
