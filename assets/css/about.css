@@ -107,7 +107,13 @@
 
 }
 
-/* Hero BAnner */
+#slider .item .img-aset {
+  border-radius: 20px;
+  height: 250px;
+  width: 450px;
+}
+
+/* Hero Banner */
 .hero-service .content {
   position: absolute;
   margin-top: 20%;

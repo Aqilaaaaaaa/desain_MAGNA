@@ -2392,13 +2392,13 @@ header.fixed {
 
 #home h2 {
   padding-top: 140px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   font-size: 58px;
 }
 
 #home .short-bio {
-  margin-top: 24px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 #home .counter {
@@ -3401,7 +3401,7 @@ input::-webkit-inner-spin-button {
 }
 @media (max-width: 480px) {
   #contact .info-details p {
-    font-size: 19px;
+    font-size: 17px;
   }
   #contact .section-title h3 {
     font-size: 30px;
