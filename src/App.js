@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import './assets/css/main-new.css';
+import './assets/css/swiper-bundle.min.css';
+import { BrowserRouter } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import Router from './components/Router';
+import BackToTopButton from './components/layouts/ScrollToTop';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Helmet>
+        <title>Magna Juara Kreasi</title>
+        <meta name="description" content="Partner terpercaya yang mengkhususkan diri dalam membantu bisnis meraih kesuksesan melalui pemanfaatan potensi penuh dunia digital" />
+      </Helmet>
+      <BrowserRouter>
+        <BackToTopButton />
+        <Router />
+      </BrowserRouter>
+    </>
+
   );
 }
 
