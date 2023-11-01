@@ -112,7 +112,7 @@ export default function AboutPage() {
                     <div className="row d-flex flex-column-reverse flex-lg-row justify-content-between">
                         <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
                             <div className="content p-4">
-                                <h2 className='text-dark'>MAGNA JUARA KREASI</h2>
+                                <h2 className="text-dark">MAGNA JUARA KREASI</h2>
                                 <h3>
                                     {" "}
                                     We’ve been involved first-hand with scaling multiple startups and
