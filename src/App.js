@@ -4,7 +4,7 @@ import './assets/css/main-new.css';
 import './assets/css/swiper-bundle.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import Router from './components/Router';
+import Router from './pages/Router';
 import BackToTopButton from './components/layouts/ScrollToTop';
 
 function App() {

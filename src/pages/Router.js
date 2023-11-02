@@ -1,12 +1,12 @@
 import { useRoutes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import MainLayout from "./layouts/MainLayout";
-import AboutPage from "./pages/AboutPage";
-import ServicePage from "./pages/ServicePage";
-import ContactPage from "./pages/ContactPage";
-import NotFoundPage from "./pages/NotFoundPage";
-import ProjectPage from "./pages/ProjectPage";
-import BlogPage from "./pages/BlogPage";
+import HomePage from "./HomePage";
+import MainLayout from "../components/layouts/MainLayout";
+import AboutPage from "./AboutPage";
+import ServicePage from "./ServicePage";
+import ContactPage from "./ContactPage";
+import NotFoundPage from "./NotFoundPage";
+import ProjectPage from "./ProjectPage";
+import BlogPage from "./BlogPage";
 export default function Router() {
     let tempRoutes = [
         {

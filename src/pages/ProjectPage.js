@@ -1,10 +1,9 @@
-
 import { Icon } from "@iconify/react";
-import { Card, CardBody, CardImg, CardText, CardTitle, Col, Container, Image, Row } from "react-bootstrap";
+import { Card, CardBody, CardText, CardTitle, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import porto1 from '../../assets/images/portfolio/porto1.png'
-import porto2 from '../../assets/images/portfolio/porto2.png'
-import porto3 from '../../assets/images/portfolio/porto3.png'
+import porto1 from '../assets/images/portfolio/porto1.png'
+import porto2 from '../assets/images/portfolio/porto2.png'
+import porto3 from '../assets/images/portfolio/porto3.png'
 export default function ProjectPage() {
 
     const listProject = [
@@ -83,14 +82,14 @@ export default function ProjectPage() {
                         className="mt-5">
                         <CardBody>
                             {
-                                listProject.map((v) => {
+                                listProject.map((v, i) => {
                                     return (
-                                        <>
+                                        <div key={i}>
                                             <Row className="mt-5">
                                                 <Col md={5}>
                                                     <div className="card-img">
                                                         <img
-                                                            src={v.image}
+                                                            src={v.image} alt=""
                                                         />
                                                     </div>
                                                 </Col>
@@ -124,7 +123,7 @@ export default function ProjectPage() {
                                                     </CardText>
                                                 </Col>
                                             </Row>
-                                        </>
+                                        </div>
                                     )
                                 })
                             }

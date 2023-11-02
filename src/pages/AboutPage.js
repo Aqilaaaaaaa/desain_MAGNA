@@ -1,5 +1,5 @@
 
-import '../../assets/css/services.css'
+import '../assets/css/services.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -9,11 +9,11 @@ import 'swiper/css/navigation';
 // import required modules
 import { Navigation, Pagination, Scrollbar, A11y, Keyboard, Autoplay } from 'swiper/modules';
 import { useState } from 'react';
-import imageSlide1 from '../../assets/images/dev.jpeg'
-import imageSlide2 from '../../assets/images/integ.jpeg'
-import imageSlide3 from '../../assets/images/valid.jpeg'
-import imageSlide4 from '../../assets/images/integ.jpeg'
-import imageSlide5 from '../../assets/images/dev.jpeg'
+import imageSlide1 from '../assets/images/dev.jpeg'
+import imageSlide2 from '../assets/images/integ.jpeg'
+import imageSlide3 from '../assets/images/valid.jpeg'
+import imageSlide4 from '../assets/images/integ.jpeg'
+import imageSlide5 from '../assets/images/dev.jpeg'
 import { Button, Col, Row } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';

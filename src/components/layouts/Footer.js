@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="row text-center">
                     <div className="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12">
                         <div className="logo-out d-flex justify-content-start">
-                            <img href="#home" src={logo} className="logo" />
+                            <img href="#home" src={logo} className="logo" alt=""/>
                             <p>
                                 <span className="text-white mt-8">MAGNA </span>JUARA KREASI
                             </p>
@@ -31,15 +31,15 @@ export default function Footer() {
                         <div className="mx-3 site-links">
                             <ul style={{ lineHeight: 3, fontWeight: 500 }}>
                                 {
-                                    MENU_FOOTER?.map((v) => {
+                                    MENU_FOOTER?.map((v, index) => {
                                         return (
-                                            <>
+                                            <div key={index}>
                                                 <li>
                                                     <Link to={v.path}>
                                                         {v.name}
                                                     </Link>
                                                 </li>
-                                            </>
+                                            </div>
                                         )
                                     })
                                 }
@@ -55,16 +55,18 @@ export default function Footer() {
                             <a
                                 href="https://instagram.com/magnajuarakreasi?igshid=OGQ5ZDc2ODk2ZA=="
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 <Icon width={24} height={24} icon={'mdi:instagram'} />
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/magna-juara-kreasi/"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 <Icon width={24} height={24} icon={'mdi:linkedin'} />
                             </a>
-                            <a href="https://wa.me/6285280082423" target="_blank">
+                            <a href="https://wa.me/6285280082423" target="_blank" rel="noreferrer">
                                 <Icon width={24} height={24} icon={'ic:baseline-whatsapp'} />
                             </a>
                         </div>

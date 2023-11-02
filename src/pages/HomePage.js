@@ -1,20 +1,19 @@
-import profile1 from '../../assets/images/user/img-1.jpg'
-import profile2 from '../../assets/images/user/img-2.jpg'
-import profile3 from '../../assets/images/user/img-3.jpg'
-import profile4 from '../../assets/images/user/img-4.jpg'
-import profile5 from '../../assets/images/user/img-5.jpg'
-import profile6 from '../../assets/images/user/img-6.jpg'
-import phoneBanner from '../../assets/images/home1-3.png'
-import ourCompany from '../../assets/images/our company.jpg'
+import profile1 from '../assets/images/user/img-1.jpg'
+import profile2 from '../assets/images/user/img-2.jpg'
+import profile3 from '../assets/images/user/img-3.jpg'
+import profile4 from '../assets/images/user/img-4.jpg'
+import profile5 from '../assets/images/user/img-5.jpg'
+import phoneBanner from '../assets/images/home1-3.png'
+import ourCompany from '../assets/images/our company.jpg'
 
-import softWareHouseIcon from '../../assets/icons/software.svg'
-import videoProductionIcon from '../../assets/icons/video.png'
-import contentMarketingIcon from '../../assets/icons/content.svg'
-import brandingIcon from '../../assets/icons/branding.svg'
-import graphicDesignIcon from '../../assets/icons/web_dev.svg'
+import softWareHouseIcon from '../assets/icons/software.svg'
+import videoProductionIcon from '../assets/icons/video.png'
+import contentMarketingIcon from '../assets/icons/content.svg'
+import brandingIcon from '../assets/icons/branding.svg'
+import graphicDesignIcon from '../assets/icons/web_dev.svg'
 import NET from 'vanta/dist/vanta.net.min'
 import { useEffect, useRef, useState } from 'react'
-import CustomDialog from '../reusable/CustomDialog'
+import CustomDialog from '../components/reusable/CustomDialog'
 import { Link } from 'react-router-dom'
 
 export default function HomePage() {
@@ -90,7 +89,7 @@ export default function HomePage() {
         return () => {
             if (vantaEffect) vantaEffect.destroy()
         }
-    }, [])
+    }, [vantaEffect])
     return (
         <>
             {/* HERO BANNER */}
@@ -184,9 +183,9 @@ export default function HomePage() {
                     <div className="card-container swiper">
                         <div className="row" style={{ justifyContent: "center" }}>
                             {
-                                myServices?.map((v) => {
+                                myServices?.map((v, i) => {
                                     return (
-                                        <>
+                                        <div key={i}>
                                             <div className="col-md-6 col-xl-4">
                                                 <div className="service-card">
                                                     <div className="icon-container">
@@ -219,7 +218,7 @@ export default function HomePage() {
                                                     </div>
                                                 </div> */}
                                             </div>
-                                        </>
+                                        </div>
                                     )
                                 })
                             }

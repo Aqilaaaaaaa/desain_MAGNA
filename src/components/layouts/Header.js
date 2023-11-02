@@ -1,5 +1,3 @@
-
-
 import { Icon } from '@iconify/react';
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
@@ -20,16 +18,16 @@ export default function Header() {
             <header className={`position-absolute w-100 ${location.pathname === '/' ? scroll ? 'fixed sliding' : '' : 'fixed sliding'} ${isExpand ? 'active' : ''}`}>
                 <div className="container d-flex flex-roww">
                     <div className="logo-bg" style={{ background: "none" }}>
-                        <img href="#home" src={logo} className="logo" />
+                        <img href="#home" src={logo} className="logo" alt=""/>
                         <p className="w-100 title">
                             <span>MAGNA </span>JUARA KREASI
                         </p>
                     </div>
                     <ul className="menus" style={isExpand ? { display: 'block' } : {}}>
                         {
-                            MENU_HEADER.map((obj) => {
+                            MENU_HEADER.map((obj, i) => {
                                 return (
-                                    <>
+                                    <div key={i}>
                                         <li>
                                             {
                                                 location.pathname !== '/' ?
@@ -47,7 +45,7 @@ export default function Header() {
                                             }
 
                                         </li>
-                                    </>
+                                    </div>
                                 )
                             })
                         }
@@ -57,16 +55,18 @@ export default function Header() {
                         <a
                             href="https://instagram.com/magnajuarakreasi?igshid=OGQ5ZDc2ODk2ZA=="
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <Icon width={24} height={24} icon={'mdi:instagram'} />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/magna-juara-kreasi/"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <Icon width={24} height={24} icon={'mdi:linkedin'} />
                         </a>
-                        <a href="https://wa.me/6285280082423" target="_blank">
+                        <a href="https://wa.me/6285280082423" target="_blank" rel="noreferrer">
                             <Icon width={24} height={24} icon={'ic:baseline-whatsapp'} />
                         </a>
                     </div>
