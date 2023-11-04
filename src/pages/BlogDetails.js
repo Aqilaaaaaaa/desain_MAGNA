@@ -1,9 +1,22 @@
-import { Link } from 'react-router-dom';
-import '../assets/css/blog.css'
-import BlogCard from '../components/blogCard';
-import { useRouter } from 'react-router-dom'
+import BlogCard from "../components/blogCard";
+import { useState, useEffect } from "react";
+import { useParams, Link } from 'react-router-dom';
 
-export default function BlogPage() {
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+// import required modules
+import { Navigation, Pagination, Scrollbar, A11y, Keyboard, Autoplay } from 'swiper/modules';
+
+export default function BlogDetails() {
+
+  const [data, setData] = useState([])
+
+  const params = useParams()
 
   const blogList = [
     {
@@ -51,39 +64,129 @@ export default function BlogPage() {
     }
   ]
 
+  const [swiper, setSwiper] = useState(null);
+  const [activeTab, setActiveTab] = useState(1)
+
+
+    const slideTo = (index) => {
+      if (swiper)
+        swiper.slideTo(index)
+    };
+
   return (
     <>
       <div className="container-fluid" style={{ padding: "8em 0 0px 0" }}>
         <section className="page-title">
-            <div className="thm-container">
-                <h3>Blog</h3>
-            </div>
+          <div className="thm-container">
+            <h3>Blog Details</h3>
+          </div>
         </section>
         <div className="breadcumb-wrapper">
           <div className="thm-container">
             <ul className="breadcumb">
               <li>
-                  <Link to={'/'}>Homepage</Link>
+                <Link to={'/blog'}>Blog</Link>
               </li>
               <li>
-                  <span className="sep">-</span>
+                <span className="sep">-</span>
               </li>
               <li>
-                  <span>Blog</span>
+                <span>Blog Details</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <section id="blog" className="mt-5 mb-5">
-        <div className="container">
-          {blogList?.map((v, i) => {
-            return (
-              <div key={i}><BlogCard title={v.title} id={v.id} src={v.src} /></div>
-            )
-          })}
+      <section id="blogDetails">
+        <div className="content">
+          <div className="banner">
+          {blogList.map((item, i)=>{
+              if(parseInt(item.id) === parseInt(params.id)){
+                return(
+                  <div key={i}>
+                    <h2 className="title">{item.title}</h2>
+                    <div className="container_content">
+                      <div className="img">
+                        <img src={item.src} alt="img"/>
+                      </div>
+                      <p className="detail col-md-8">{item.desc}</p>
+                    </div>
+                  </div>
+                )
+              }
+            })}
+          </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 mx-auto">
+                <div className="post-header border-bottom text-center">
+                  <h3 className>Popular post</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="post">
+            <Swiper 
+              onSwiper={setSwiper}
+              onSlideChange={(i)=>{
+                setActiveTab(i?.activeIndex + 1)
+              }}
+              breakpoints={
+                {
+                  1280: {
+                    slidesPerView: 4,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    // width: 400,
+                    spaceBetween: 60,
+                  },
+                  414: {
+                    slidesPerView: 1,
+                    spaceBetween: 60,
+                    // width: 100,
+                  },
+                  390: {
+                    slidesPerView: 1,
+                    spaceBetween: 60,
+                    // width: 360,
+                  },
+                }
+              }
+              // slidesPerView={}
+              // spaceBetween={100}
+              keyboard={{enabled:true}}
+              navigation={{ nextEl: ".swipper-arrow-right", prevEl: ".swipper-arrow-left" }}
+                pagination={{
+                    paginationClickable: true,
+                    dynamicBullets: true,
+                    clickable: true,
+                    keyboard: {
+                        enabled: true
+                    },
+                    el: null,
+                    // progressbarOpposite: true
+                }}
+
+              // autoplay={{
+              //     delay: 10000,
+              //     disableOnInteraction: false
+              // }}
+              modules={[Navigation, Pagination, Scrollbar, A11y, Keyboard, Autoplay]}
+              className="mySwiper"
+            >
+            {blogList?.map((v, i) => {
+              return (
+                <SwiperSlide  key={i} className="swipeBlog">                    
+                  <BlogCard title={v.title} src={v.src} url={v.url} id={v.id}/>
+                </SwiperSlide>
+              )
+            })}
+
+            </Swiper>
+          </div>
         </div>
       </section>
     </>
-  );
+  )
 }

@@ -221,7 +221,7 @@ export default function AboutPage() {
                                                     borderRadius: 20,
                                                     height: 250,
                                                     width: 450
-                                                }} className="img-aset" src={obj.child.image} />
+                                                }} className="img-aset" src={obj.child.image} alt='img' />
                                             </div>
                                         </div>
 

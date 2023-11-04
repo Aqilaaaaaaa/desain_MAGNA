@@ -3304,6 +3304,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   margin: 10px 0;
 }
 
+
 /*----------------------------------------*/
 /*  17. contact CSS START
 /*----------------------------------------*/
@@ -3581,3 +3582,65 @@ footer .footer-widget.explore {
     font-size: 0.8em;
   }
 }
+
+#blogDetails .content {
+  margin-top: 50px;
+  left: auto;
+  right: auto;
+}
+
+#blogDetails .post {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+#blogDetails .container {
+  margin-top: 30px;
+}
+
+#blogDetails .post-header {
+  color: var(--cf-theme-secondary);
+}
+
+#blogDetails .banner {
+  margin: 10px 2rem; 
+}
+
+#blogDetails .title {
+  padding: 24px 0;
+  text-align: center;
+}
+
+#blogDetails .container_content {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+}
+#blogDetails .img{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#blogDetails .detail {
+  color: black;
+  padding: 10px 0;
+  text-align: justify;
+  margin-top: 30px;
+}
+#blogDetails .mySwiper{
+  padding: 5px 1rem;
+  height: 325px;
+}
+/* #blogDetails .swipeBlog {
+  padding: 0 1rem;
+  background-color: green;
+} */

@@ -1,6 +1,7 @@
 import './index.css'
+import { Link } from 'react-router-dom';
 
-export default function BlogCard({title, url, src}) {
+export default function BlogCard({title, id, src}) {
   return (
     <>
       <div id="blogCard">
@@ -10,7 +11,7 @@ export default function BlogCard({title, url, src}) {
             <div className="card__header">
               <h2 className="card__title">{title}</h2>  
             </div>
-            <a href={url} target='_blank' rel="noreferrer"><button className="sub-btn text-white">Read more</button></a>
+            <Link to={`/blogDetails/${id}`} ><button className="sub-btn text-white">Read more</button></Link>
           </div>
         </div>
       </div>  

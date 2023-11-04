@@ -7,6 +7,7 @@ import ContactPage from "./ContactPage";
 import NotFoundPage from "./NotFoundPage";
 import ProjectPage from "./ProjectPage";
 import BlogPage from "./BlogPage";
+import BlogDetails from "./BlogDetails";
 export default function Router() {
     let tempRoutes = [
         {
@@ -19,6 +20,7 @@ export default function Router() {
                 { path: '/projects', element: <ProjectPage /> },
                 { path: '/contact', element: <ContactPage /> },
                 { path: '/blog', element: <BlogPage/>},
+                { path: '/blogDetails/:id', element: <BlogDetails/>},
                 {
                     path: '*',
                     element: <NotFoundPage />
